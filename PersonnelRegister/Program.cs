@@ -1,4 +1,4 @@
-﻿namespace PersonnelRegister
+﻿namespace StaffRegister
 {
     internal class Program
     {
