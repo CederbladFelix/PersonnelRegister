@@ -79,8 +79,7 @@ namespace StaffRegister
                     }
                 }
 
-                Employee anställd = new Employee(name, salary);
-                employeeList.Add(anställd);
+                employeeList.Add(new Employee(name, salary));
             }
 
         }
@@ -112,7 +111,8 @@ namespace StaffRegister
                     }
                     else
                     {
-                        foreach (var employee in employeeList)
+                        Console.WriteLine("Dessa är de anställda: ");
+                        foreach (Employee employee in employeeList)
                         {
                             Console.WriteLine(employee.ToString());
                         }
